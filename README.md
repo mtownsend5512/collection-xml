@@ -67,21 +67,25 @@ $xml = array_to_xml($array);
 ## Helpers, methods, and arguments
 
 **Helper**
+
 ``array_to_xml($array, $root = '')``
 
 The ``$root`` argument allows you to customize the root xml element. Default is ``<root>``.
 
 **Helper**
+
 ``xml_to_array($xml, $outputRoot = false)``
 
 The ``$outputRoot`` determines whether or not the php array will have a ``@root`` key. Default is ``false``.
 
 **Collection method**
+
 ``->toXml($root)``
 
 See ``array_to_xml()`` above.
 
 **Collection method**
+
 ``->toSoapXml($root = '', $soapRoot = '', $fullUrl, array $options = [])``
 
 The ``$root`` argument allows you to customize the inner root xml element. Default is ``<root>``.
