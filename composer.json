@@ -1,5 +1,6 @@
 {
     "name": "mtownsend/collection-xml",
+    "version": "0.0.1",
     "description": "The missing XML support for Laravel's Collection class.",
     "keywords": [
         "collection",
