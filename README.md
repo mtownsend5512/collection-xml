@@ -94,7 +94,7 @@ The ``$root`` argument allows you to customize the inner root xml element. Defau
 
 ``$fullUrl`` will be the fully qualified SOAP endpoint e.g. https://yourwebserver/service.asmx?wsdl. **Please note:** the SoapFactory class will ping the ``$fullUrl`` to see if it is valid as it builds the SOAP xml. It will not trigger an api interaction, but you will experience an exception if your url is invalid.
 
-``$options`` will be an array of valid options for PHP's [SoapClient][http://php.net/manual/en/class.soapclient.php] class. By default ``['trace' => 1]`` is set.
+``$options`` will be an array of valid options for PHP's [SoapClient](http://php.net/manual/en/class.soapclient.php) class. By default ``['trace' => 1]`` is set.
 
 ## Purpose
 
@@ -105,7 +105,7 @@ This package aims to bring painless xml support to Laravel's Collection class, a
 ## Credits
 
 - Mark Townsend
-- [Spatie][https://spatie.be/]
+- [Spatie](https://spatie.be/)
 - All Contributors
 
 ## License
