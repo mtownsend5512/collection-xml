@@ -110,4 +110,4 @@ This package aims to bring painless xml support to Laravel's Collection class, a
 
 ## License
 
-The MIT License (MIT).
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
