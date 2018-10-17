@@ -94,6 +94,10 @@ Laravel has always favored json over xml with its api structure. Inevitably, dev
 
 This package aims to bring painless xml support to Laravel's Collection class, and bring a few useful helpers along.
 
+## Other packages you may be interested in
+
+- [mtownsend/xml-to-array](https://github.com/mtownsend5512/xml-to-array)
+
 ## Credits
 
 - Mark Townsend
