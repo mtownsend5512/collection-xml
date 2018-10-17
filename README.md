@@ -48,16 +48,6 @@ $xml = $collection->toSoapXml('Request', 'xmlBody', 'https://yourwebserver/servi
 
 **Please note:** the SoapFactory class will ping the ``$fullUrl`` to see if it is valid as it builds the SOAP xml. It will not trigger an api interaction, but you will experience an exception if your url is invalid.
 
-### Xml to collection
-
-Convert valid xml into an array before wrapping it in a collection:
-
-```php
-$xml = '<?xml version="1.0"?><root><carrier>fedex</carrier><id>123</id><tracking_number>9205590164917312751089</tracking_number></root>';
-
-$collection = collect(xml_to_array($xml));
-```
-
 ### Array to xml
 
 Convert an array into xml without using a collection:
@@ -79,12 +69,6 @@ $xml = array_to_xml($array);
 ``array_to_xml($array, $root = '')``
 
 The ``$root`` argument allows you to customize the root xml element. Default is ``<root>``.
-
-**Helper**
-
-``xml_to_array($xml, $outputRoot = false)``
-
-The ``$outputRoot`` determines whether or not the php array will have a ``@root`` key. Default is ``false``.
 
 **Collection method**
 

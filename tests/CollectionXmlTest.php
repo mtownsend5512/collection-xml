@@ -64,10 +64,4 @@ class CollectionXml extends TestCase
         $xml = $this->removeNewLines(array_to_xml($array));
         $this->assertEquals($xml, $this->testXml);
     }
-
-    /** @test */
-    public function xml_can_convert_to_array()
-    {
-        $this->assertEquals(xml_to_array($this->testXml), $this->testCollection->toArray());
-    }
 }
