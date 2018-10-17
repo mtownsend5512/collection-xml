@@ -8,6 +8,14 @@ Install via composer:
 composer require mtownsend/collection-xml
 ```
 
+### Using Lumen
+
+To register the service provider, add the following line to ``app/bootstrap/app.php``:
+
+```php
+$app->register(Mtownsend\CollectionXml\Providers\CollectionXmlServiceProvider::class);
+```
+
 ## Quick start
 
 ### Collection to xml
