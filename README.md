@@ -8,6 +8,19 @@ Install via composer:
 composer require mtownsend/collection-xml
 ```
 
+### Registering the service provider
+
+For Laravel 5.4 and lower, add the following line to your ``config/app.php``:
+
+```php
+/*
+ * Package Service Providers...
+ */
+Mtownsend\CollectionXml\Providers\CollectionXmlServiceProvider::class,
+```
+
+For Laravel 5.5 and greater, the package will auto register the provider for you.
+
 ### Using Lumen
 
 To register the service provider, add the following line to ``app/bootstrap/app.php``:
@@ -96,6 +109,7 @@ This package aims to bring painless xml support to Laravel's Collection class, a
 
 ## Other packages you may be interested in
 
+- [mtownsend/request-xml](https://github.com/mtownsend5512/request-xml)
 - [mtownsend/xml-to-array](https://github.com/mtownsend5512/xml-to-array)
 
 ## Credits
