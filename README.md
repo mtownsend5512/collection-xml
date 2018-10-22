@@ -49,9 +49,9 @@ $xml = $collection->toXml();
 // Returns
 <?xml version="1.0"?>
 <root>
-	<carrier>fedex</carrier>
-	<id>123</id>
-	<tracking_number>9205590164917312751089</tracking_number>
+    <carrier>fedex</carrier>
+    <id>123</id>
+    <tracking_number>9205590164917312751089</tracking_number>
 </root>
 ```
 
@@ -71,20 +71,20 @@ $xml = $collection->toSoapXml('request', 'xmlBody', 'https://yourwebserver/servi
 // Returns
 <?xml version="1.0" encoding="UTF-8"?>
 <SOAP-ENV:Envelope
-	xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
-	xmlns:ns1="https://yourwebserver/service.asmx?wsdl">
-	<SOAP-ENV:Body>
-		<ns1:ProcessXMLRequest>
-			<ns1:xmlBody>
-				<?xml version="1.0"?>
-				<request>
-					<carrier>fedex</carrier>
-					<id>123</id>
-					<tracking_number>9205590164917312751089</tracking_number>
-				</request>
-			</ns1:xmlBody>
-		</ns1:ProcessXMLRequest>
-	</SOAP-ENV:Body>
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:ns1="https://yourwebserver/service.asmx?wsdl">
+    <SOAP-ENV:Body>
+        <ns1:ProcessXMLRequest>
+            <ns1:xmlBody>
+                <?xml version="1.0"?>
+                <request>
+                    <carrier>fedex</carrier>
+                    <id>123</id>
+                    <tracking_number>9205590164917312751089</tracking_number>
+                </request>
+            </ns1:xmlBody>
+        </ns1:ProcessXMLRequest>
+    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
 
