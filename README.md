@@ -1,5 +1,7 @@
 The missing XML support for Laravel's Collection class.
 
+This package is designed to work with the [Laravel](https://laravel.com) framework.
+
 ## Installation
 
 Install via composer:
@@ -110,6 +112,7 @@ This package aims to bring painless xml support to Laravel's Collection class, a
 ## Other packages you may be interested in
 
 - [mtownsend/request-xml](https://github.com/mtownsend5512/request-xml)
+- [mtownsend/response-xml](https://github.com/mtownsend5512/response-xml)
 - [mtownsend/xml-to-array](https://github.com/mtownsend5512/xml-to-array)
 
 ## Credits
