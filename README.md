@@ -45,6 +45,14 @@ $collection = collect([
 ]);
 
 $xml = $collection->toXml();
+
+// Returns
+<?xml version="1.0"?>
+<root>
+	<carrier>fedex</carrier>
+	<id>123</id>
+	<tracking_number>9205590164917312751089</tracking_number>
+</root>
 ```
 
 ### Collection to soap xml
@@ -58,7 +66,26 @@ $collection = collect([
     'tracking_number' => '9205590164917312751089',
 ]);
 
-$xml = $collection->toSoapXml('Request', 'xmlBody', 'https://yourwebserver/service.asmx?wsdl');
+$xml = $collection->toSoapXml('request', 'xmlBody', 'https://yourwebserver/service.asmx?wsdl');
+
+// Returns
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+	xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:ns1="https://yourwebserver/service.asmx?wsdl">
+	<SOAP-ENV:Body>
+		<ns1:ProcessXMLRequest>
+			<ns1:xmlBody>
+				<?xml version="1.0"?>
+				<request>
+					<carrier>fedex</carrier>
+					<id>123</id>
+					<tracking_number>9205590164917312751089</tracking_number>
+				</request>
+			</ns1:xmlBody>
+		</ns1:ProcessXMLRequest>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
 ```
 
 **Please note:** the SoapFactory class will ping the ``$fullUrl`` to see if it is valid as it builds the SOAP xml. It will not trigger an api interaction, but you will experience an exception if your url is invalid.
