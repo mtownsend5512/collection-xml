@@ -146,7 +146,15 @@ This package aims to bring painless xml support to Laravel's Collection class, a
 
 - Mark Townsend
 - [Spatie](https://spatie.be/)
-- All Contributors
+- [All Contributors](../../contributors)
+
+## Testing
+
+You can run the tests with:
+
+```bash
+./vendor/bin/phpunit
+```
 
 ## License
 
