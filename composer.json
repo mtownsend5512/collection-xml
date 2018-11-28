@@ -9,6 +9,7 @@
         "toXml",
         "toSoapXml"
     ],
+    "license": "MIT",
     "authors": [
         {
             "name": "Mark Townsend",
