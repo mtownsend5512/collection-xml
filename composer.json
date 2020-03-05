@@ -31,7 +31,7 @@
         "spatie/array-to-xml": "^2.6"
     },
     "require-dev": {
-      "phpunit/phpunit": "^6.4"
+      "phpunit/phpunit": "^6.4|^8.5"
     },
     "autoload-dev": {
         "psr-4": {
