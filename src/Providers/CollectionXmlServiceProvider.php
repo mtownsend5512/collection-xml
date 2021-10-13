@@ -20,7 +20,7 @@ class CollectionXmlServiceProvider extends ServiceProvider
             return ArrayToXml::convert($this->toArray(), $root);
         });
 
-        Collection::macro('toSoapXml', function ($root = '', $soapRoot = 'xmlBody', $fullUrl, array $options = []) {
+        Collection::macro('toSoapXml', function ($root = '', $soapRoot = 'xmlBody', $fullUrl = null, array $options = []) {
             $soapFactory = new SoapFactory($fullUrl, array_merge(['trace' => 1], $options));
             return $soapFactory->build([$soapRoot => $this->toXml($root)])->getSoapXml();
         });
